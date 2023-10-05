@@ -1,4 +1,4 @@
-import { MongoClient, Db } from "mongodb";
+import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -14,6 +14,6 @@ function run() {
   }
 }
 
-let db = run().then((client) => client.db("test"));
+let db = run().then((client) => client.db("freecodecamp"));
 
 export default db;
